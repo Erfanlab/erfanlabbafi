@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities; 
+:root{
+  --colorDynamic: red;
+}
 
 @font-face {
     font-family: yekan;
@@ -100,4 +103,28 @@ swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+
+@keyframes javascript-click {
+  0% {background-color: #0C4DA2;}
+  50% {background-color: var(--colorDynamic)}
+  100% {background-color: #0C4DA2;}
+
+}
+
+.javascript-An{
+    transition: all 0.5s ease;
+  animation: javascript-click 10s linear infinite;
+}
+
+
+
+@keyframes animate-pulsese {
+  0% {border: 0; padding: 0;}
+  100% {border: 2px solid rgb(34, 197, 94); padding: 6px;  }
+}
+
+.animate-pulses:hover{
+  animation: animate-pulsese 1s linear infinite;
 }

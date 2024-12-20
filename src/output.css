@@ -974,6 +974,10 @@ video {
   transform: none;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .touch-auto {
   touch-action: auto;
 }
@@ -2609,6 +2613,10 @@ video {
   forced-color-adjust: none;
 }
 
+:root {
+  --colorDynamic: red;
+}
+
 @font-face {
   font-family: yekan;
 
@@ -2697,6 +2705,41 @@ swiper-slide img {
      object-fit: cover;
 }
 
+@keyframes javascript-click {
+  0% {
+    background-color: #0C4DA2;
+  }
+
+  50% {
+    background-color: var(--colorDynamic);
+  }
+
+  100% {
+    background-color: #0C4DA2;
+  }
+}
+
+.javascript-An {
+  transition: all 0.5s ease;
+  animation: javascript-click 10s linear infinite;
+}
+
+@keyframes animate-pulsese {
+  0% {
+    border: 0;
+    padding: 0;
+  }
+
+  100% {
+    border: 2px solid rgb(34, 197, 94);
+    padding: 6px;
+  }
+}
+
+.animate-pulses:hover {
+  animation: animate-pulsese 1s linear infinite;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -2731,6 +2774,26 @@ swiper-slide img {
       max-width: 1536px;
     }
   }
+}
+
+.hover\:h-\[28px\]:hover {
+  height: 28px;
+}
+
+.hover\:h-\[34px\]:hover {
+  height: 34px;
+}
+
+.hover\:w-\[100px\]:hover {
+  width: 100px;
+}
+
+.hover\:w-\[26px\]:hover {
+  width: 26px;
+}
+
+.hover\:w-\[28px\]:hover {
+  width: 28px;
 }
 
 .hover\:bg-blue-800:hover {

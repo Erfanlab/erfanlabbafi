@@ -7,7 +7,7 @@
     <link href="./src/output.css" rel="stylesheet">
     <script src="/src/script/indesx.js" defer></script>
 </head>
-<body onload="loadingsection()"  class=" h-full"> 
+<body id="body" onload="loadingsection()"  class=" h-full"> 
       
     <main class=" w-full h-full overflow-hidden "> 
         <section id="section-1"  class="  absolute  h-full w-full  border-y-0 borderLoading   flex flex-col justify-center items-center bg-black text-white text-center z-50 transition-all">  
@@ -33,24 +33,40 @@
     </section>
 <div class=" h-full w-full overflow-auto lg:flex">
  
-<section id="section-2" class=" bg-white w-full h-full flex flex-col justify-center items-center relative lg:min-w-[400px] lg:max-w-[400px] lg:bg-blue-m-0 lg:text-white"> 
+<section id="section-2" class=" bg-white w-full h-full flex flex-col justify-center items-center relative lg:min-w-[400px] lg:max-w-[400px] lg:bg-blue-m-0  lg:text-white" > 
 <div class=" absolute w-[90%] h-[70%]">
 <div class=" relative h-full w-full flex justify-center"> 
-    <svg class=" absolute right-[30%]" width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class=" absolute right-[30%] cursor-pointer" onclick="onclicki(1)">
+
+    <svg class=" hover:w-[28px] hover:h-[28px] transition-all"  width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M24 0L21.8217 23.4L12 26L2.17828 23.4L0 0H24ZM5.40681 14.8571L5.82496 19.37L12 21.0321L18.1556 19.4071L19.517 4.78214H4.46353L4.73582 7.65143H16.2204L15.9481 10.595H5.0081L5.27066 13.4643H15.6953L15.3452 17.1786L12 18.0514L8.64506 17.1879L8.42139 14.8571H5.40681Z" fill="currentcolor"/>
         </svg>
-    <svg class=" absolute right-[10%] top-[20%]  " width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+</div>
+
+
+        <div class=" absolute right-[10%] top-[20%] cursor-pointer  " onclick="onclicki(2)">
+    <svg class=" hover:w-[28px] hover:h-[28px] transition-all"  width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M19.2614 7.62125L19.5341 4.7775H4.46591L5.26705 13.455H15.6989L15.3239 17.16L11.9659 18.0212L8.625 17.16L8.40341 14.885H5.42045L5.79545 19.4025L11.9659 21.0275H12.0341V21.0112L18.1534 19.4025L19.0057 10.5625H8.02841L7.77273 7.62125H19.2614ZM0 0H24L21.8182 23.3675L11.9659 26L2.18182 23.3675L0 0Z" fill="currentcolor"/>
             </svg>
-    <svg class=" absolute left-[10%] bottom-[30%]" width="22" height="30" viewBox="0 0 22 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</div>
+            <div class=" absolute left-[10%] bottom-[30%] cursor-pointer" onclick="onclicki(3)">
+
+    <svg class=" hover:w-[26px]  hover:h-[34px] transition-all"  width="22" height="30" viewBox="0 0 22 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.11266 0H15.8873C19.257 0 22 2.64003 22 5.80946C22 7.66232 21.0615 9.33597 19.6079 10.4044C21.0615 11.4742 22 13.1465 22 15.0007C22 18.1688 19.257 20.8088 15.8873 20.8088C14.5144 20.8088 13.246 20.3718 12.2253 19.6383V24.1905C12.2253 27.36 9.48368 30 6.11266 30C2.74304 30 0 27.36 0 24.1905C0 22.3377 0.938464 20.6654 2.39214 19.5956C0.938464 18.5258 0 16.8536 0 15.0007C0 13.1465 0.938464 11.4742 2.39214 10.4044C0.938464 9.33597 0 7.66232 0 5.80946C0 2.64003 2.74304 0 6.11266 0ZM9.77468 20.8088H6.11266C4.12152 20.8088 2.45063 22.3184 2.45063 24.1905C2.45063 26.0641 4.12152 27.5723 6.11266 27.5723C8.1052 27.5723 9.77468 26.0641 9.77468 24.1905V20.8088ZM12.2253 15.0007C12.2253 13.1272 13.8948 11.6176 15.8873 11.6176C17.8785 11.6176 19.5494 13.1272 19.5494 15.0007C19.5494 16.8729 17.8785 18.3824 15.8873 18.3824C13.8948 18.3824 12.2253 16.8729 12.2253 15.0007ZM6.06671 11.619C4.09506 11.641 2.45063 13.1423 2.45063 15.0007C2.45063 16.8729 4.12152 18.3824 6.11266 18.3824H9.77468V11.6176H6.11266L6.06671 11.619ZM9.77468 9.19121V2.42772H6.11266C4.12152 2.42772 2.45063 3.93593 2.45063 5.80946C2.45063 7.683 4.12152 9.19121 6.11266 9.19121H9.77468ZM12.2253 9.19121H15.8873C17.8785 9.19121 19.5494 7.683 19.5494 5.80946C19.5494 3.93593 17.8785 2.42772 15.8873 2.42772H12.2253V9.19121Z" fill="currentcolor"/>
-                </svg>  
-    <svg class=" absolute right-[10%] bottom-[40%]" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                </svg> 
+</div>
+                <div class=" absolute right-[10%] bottom-[40%] cursor-pointer"  onclick="onclicki(4)"> 
+ 
+    <svg  class=" hover:w-[28px] hover:h-[28px] transition-all"  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0V24H24V0H0ZM12.5261 20.5307C12.1725 21.2492 11.4969 21.7216 10.7147 21.9494C9.51227 22.2255 8.36273 22.0683 7.5069 21.5544C6.93405 21.2032 6.48696 20.6626 6.18405 20.0399C6.79294 19.6679 7.40031 19.2937 8.0092 18.9218C8.02531 18.9287 8.07285 19.0153 8.13727 19.1273C8.36963 19.5176 8.57055 19.7937 8.96549 19.987C9.35353 20.1189 10.204 20.204 10.533 19.5215C10.7339 19.1748 10.6695 18.0368 10.6695 16.8029C10.6695 14.8635 10.6787 12.9563 10.6787 10.9931H12.9233C12.9233 13.0544 12.9348 15.1212 12.9233 17.1794C12.9279 18.441 13.0376 19.5882 12.5261 20.5307ZM21.839 19.8965C21.059 22.566 16.7078 22.6526 14.9701 20.8888C14.6028 20.4739 14.3727 20.2569 14.1534 19.7776C15.0775 19.2462 15.0775 19.2462 15.9762 18.7262C16.4647 19.477 16.9164 19.8896 17.7285 20.0583C18.8305 20.1925 19.9394 19.8144 19.691 18.6442C19.4356 17.6879 17.4348 17.4555 16.0729 16.4333C14.6902 15.5046 14.3666 13.2485 15.5023 11.9594C15.8811 11.4824 16.5268 11.1265 17.204 10.9555L17.911 10.8643C19.2684 10.8367 20.1173 11.1948 20.74 11.8911C20.9133 12.0667 21.0544 12.2561 21.3198 12.6672C20.5966 13.1281 20.5989 13.1235 19.5629 13.7945C19.3413 13.3175 18.9747 13.0184 18.5867 12.8888C17.9847 12.7063 17.2247 12.9049 17.0675 13.5414C17.013 13.7377 17.0245 13.9202 17.1112 14.2439C17.3551 14.8006 18.1741 15.0422 18.9087 15.3796C21.0238 16.2377 21.7377 17.1564 21.9133 18.2515C22.0821 19.194 21.8719 19.8052 21.8405 19.8965H21.839Z" fill="currentcolor"/>
     </svg>
-    <svg class=" absolute top-[20%] left-[10%]" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15.6479 12.0007L19.9529 4.74826L22.0331 12.0007L19.9528 19.2515L15.6479 12.0007ZM13.5496 13.1785L17.8552 20.4298L10.3567 18.5556L4.93951 13.1785H13.5496ZM17.8543 3.56956L13.5496 10.822H4.93951L10.3567 5.44455L17.8543 3.56956ZM24 9.53256L21.3736 0L11.5708 2.55472L10.1196 5.04375L7.17512 5.02317L0 12.0014L7.17512 18.9779H7.1754L10.1187 18.9567L11.5719 21.4457L21.3736 24L23.9999 14.4693L22.5084 12.0008L23.9999 9.53274L24 9.53256Z" fill="currentcolor"/>
-    </svg>
+                </div>
+    <div class=" absolute top-[20%] left-[10%] cursor-pointer" onclick="onclicki(5)">
+
+        <svg class=" hover:w-[28px] hover:h-[28px] transition-all"  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.6479 12.0007L19.9529 4.74826L22.0331 12.0007L19.9528 19.2515L15.6479 12.0007ZM13.5496 13.1785L17.8552 20.4298L10.3567 18.5556L4.93951 13.1785H13.5496ZM17.8543 3.56956L13.5496 10.822H4.93951L10.3567 5.44455L17.8543 3.56956ZM24 9.53256L21.3736 0L11.5708 2.55472L10.1196 5.04375L7.17512 5.02317L0 12.0014L7.17512 18.9779H7.1754L10.1187 18.9567L11.5719 21.4457L21.3736 24L23.9999 14.4693L22.5084 12.0008L23.9999 9.53274L24 9.53256Z" fill="currentcolor"/>
+        </svg>
+    </div>
                     </div>
 
 </div>
@@ -68,13 +84,16 @@
 
                                                             
                     
-            <img width="90px" height="90px" class=" rounded-md" src="/src/image/person.png" alt="erfanlabbafi">
+            <img width="90px" height="90px" class=" rounded-md hover:w-[100px] hover:h[100px] transition-all" src="/src/image/person.png" alt="erfanlabbafi">
             <h1 class="mt-2 text-[36px] font-bold">ErfanLabbafi</h1>
             <h3 class=" text-center">Front-End Developer </br> & </br> 
                 Designer</h3>
         </div>
-        <div class="z-10">
-            <button class=" bg-green-500 px-8 py-2 text-center active:bg-green-800 hover:bg-green-800 rounded-md text-white font-bold">Contact me</button>
+        <div class="z-10 flex justify-center items-center h-[45px]">
+            <div class="rounded-md animate-pulses">
+
+                <button  class=" bg-green-500 px-8 py-2 text-center active:bg-green-800 hover:bg-green-800 rounded-md text-white font-bold ">Contact me</button> 
+            </div>
         </div>
     </div>
 
