@@ -128,3 +128,8 @@ swiper-slide img {
 .animate-pulses:hover{
   animation: animate-pulsese 1s linear infinite;
 }
+
+.section-3{
+  transition: all 1s ease;
+  transform: translateX(4000px);
+}

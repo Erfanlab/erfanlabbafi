@@ -1,12 +1,14 @@
 const loading = document.getElementById('section-1');
 const spinElement = document.querySelector(".section-1");
 const javaScripti = document.getElementById('section-2');
+const section3 = document.getElementById('section-3');
+const section4 = document.getElementById('section-4');
 
 function deviceMod(){
     if( window.screen.width < 1000 ){
         document.getElementById('body').classList.add('mobile')
     }else{
-        document.getElementById('body').classList.add('desktop')
+        document.getElementById('body').classList.add('desktop')    
     }
 }
 
@@ -56,7 +58,7 @@ function onclicki(a){
         case 3: 
         javaScripti.classList.remove('javascript-An');
         javaScripti.classList.add('javascript-An');
-        document.documentElement.style.setProperty('--colorDynamic', 'black');
+        document.documentElement.style.setProperty('--colorDynamic', 'green');
         setTimeout(() => {
             javaScripti.classList.remove('javascript-An');
 
@@ -65,7 +67,7 @@ function onclicki(a){
         case 4: 
         javaScripti.classList.remove('javascript-An');
         javaScripti.classList.add('javascript-An');
-        document.documentElement.style.setProperty('--colorDynamic', 'black');
+        document.documentElement.style.setProperty('--colorDynamic', 'gray');
         setTimeout(() => {
             javaScripti.classList.remove('javascript-An');
 
@@ -74,7 +76,7 @@ function onclicki(a){
         case 5: 
         javaScripti.classList.remove('javascript-An');
         javaScripti.classList.add('javascript-An');
-        document.documentElement.style.setProperty('--colorDynamic', 'black');
+        document.documentElement.style.setProperty('--colorDynamic', 'pink');
         setTimeout(() => {
             javaScripti.classList.remove('javascript-An');
 
@@ -88,5 +90,11 @@ function onclicki(a){
     }
 }
 
+function changeData(){
+    section3.classList.toggle('section-3');
+    section4.classList.toggle('hidden');
+    section4.classList.toggle('flex')
+ 
 
+}
 

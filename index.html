@@ -7,10 +7,10 @@
     <link href="./src/output.css" rel="stylesheet">
     <script src="/src/script/indesx.js" defer></script>
 </head>
-<body id="body" onload="loadingsection()"  class=" h-full"> 
+<body id="body" onload="loadingsection()"  class=" h-full bg-white"> 
       
     <main class=" w-full h-full overflow-hidden "> 
-        <section id="section-1"  class="  absolute  h-full w-full  border-y-0 borderLoading   flex flex-col justify-center items-center bg-black text-white text-center z-50 transition-all">  
+        <section id="section-1"  class="  absolute  h-full w-full  border-y-0 borderLoading   flex flex-col justify-center items-center bg-black text-white text-center z-50 transition-all" style="cursor: wait;"        >  
 
         <div>
             <svg class=" w-[45px] h-[45px] lg:w-[85px] lg:h-[85px]" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,7 +31,7 @@
                 
         </div>
     </section>
-<div class=" h-full w-full overflow-auto lg:flex">
+<div class=" h-full w-full overflow-auto lg:overflow-hidden lg:flex">
  
 <section id="section-2" class=" bg-white w-full h-full flex flex-col justify-center items-center relative lg:min-w-[400px] lg:max-w-[400px] lg:bg-blue-m-0  lg:text-white" > 
 <div class=" absolute w-[90%] h-[70%]">
@@ -92,16 +92,16 @@
         <div class="z-10 flex justify-center items-center h-[45px]">
             <div class="rounded-md animate-pulses">
 
-                <button  class=" bg-green-500 px-8 py-2 text-center active:bg-green-800 hover:bg-green-800 rounded-md text-white font-bold ">Contact me</button> 
+                <button id="contactMe" onclick="changeData()"  class=" bg-green-500 px-8 py-2 text-center active:bg-green-800 hover:bg-green-800 rounded-md text-white font-bold ">Contact me</button> 
             </div>
         </div>
     </div>
 
     </section>
 
-    <section id="section-3" class="p-5 w-full bg-white -z-0 h-full flex justify-center items-center flex-col gap-3 lg:overflow-hidden">
-        <h2 class=" text-3xl font-bold">Sample</h2>
-        <swiper-container class="mySwiper h-[50%] lg:h-[80%]" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+    <section id="section-3" class="p-5 w-full bg-white -z-0 h-full flex justify-center items-center flex-col gap-3 lg:overflow-hidden duration-1000 transition-all">
+        <h2 class=" text-3xl font-bold">My sample</h2>
+        <swiper-container class="mySwiper h-[50%] lg:h-[80%] lg:max-w-[80%]" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
         centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
         <swiper-slide class=" relative ">
             <img src="/src/image/easytrader.png" class=" rounded-md lg:rounded-xl lg:hidden" alt="easytrader">
@@ -137,6 +137,24 @@
     </swiper-container>
     
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    
+    </section>
+
+    <section id="section-4" class=" hidden w-full h-full  flex-col justify-center items-center">
+
+        <h3 class=" text-2xl">Contact me...</h3>
+    <address class=" flex flex-col gap-2 justify-center items-center">
+        <div class=" border-b-2 p-2 flex flex-col justify-between">
+            <strong>My Email : erfanlabbafi450@gmail.com</strong>
+            <a href="mailto:erfanlabbafi450@gmail.com" class="bg-green-500 px-8 py-2 text-center active:bg-green-800 hover:bg-green-800 rounded-md text-white font-bold">Send mail</a>
+        </div>
+        <div class=" border-b-2 p-2 flex flex-col justify-between">
+            <strong>My Phone Number: 0989919295106</strong>
+            <a href="tel:+989919295106" class="bg-green-500 px-8 py-2 text-center active:bg-green-800 hover:bg-green-800 rounded-md text-white font-bold">Call</a>
+        </div>
+
+        <div>location : Iran,Tehran,piroziStreet </div>
+    </address>
     
     </section>
 </div>
