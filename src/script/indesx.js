@@ -1,6 +1,7 @@
 const loading = document.getElementById('section-1');
 const spinElement = document.querySelector(".section-1");
 const javaScripti = document.getElementById('section-2');
+const section2 = document.getElementById('section-2');
 const section3 = document.getElementById('section-3');
 const section4 = document.getElementById('section-4');
 
@@ -91,10 +92,16 @@ function onclicki(a){
 }
 
 function changeData(){
-    section3.classList.toggle('section-3');
-    section4.classList.toggle('hidden');
-    section4.classList.toggle('flex')
- 
+        section3.classList.toggle('section-3-full');
+        section2.classList.toggle('section-2-full');
+        javaScripti.classList.toggle('javascript-An');
+
+        document.documentElement.style.setProperty('--colorDynamic', 'black');
+
+        setTimeout(() => {
+            document.querySelector('.mini-section-2').classList.toggle('active');
+        }, 1000);
+
 
 }
 
