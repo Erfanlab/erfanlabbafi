@@ -1,3 +1,4 @@
+
 const loading = document.getElementById('section-1');
 const spinElement = document.querySelector(".section-1");
 const javaScripti = document.getElementById('section-2');
@@ -90,18 +91,28 @@ function onclicki(a){
 
     }
 }
+let contactMeBtn ='Contact me' ;
 
 function changeData(){
         section3.classList.toggle('section-3-full');
         section2.classList.toggle('section-2-full');
         javaScripti.classList.toggle('javascript-An');
-
         document.documentElement.style.setProperty('--colorDynamic', 'black');
-
-        setTimeout(() => {
+            section4.classList.toggle('section-4-full');
             document.querySelector('.mini-section-2').classList.toggle('active');
-        }, 1000);
-
+        if (contactMeBtn == 'Contact me'){
+            contactMeBtn = 'back'
+            document.getElementById('contactMe').innerHTML = 'back';
+            document.getElementById('contactMe').classList.add('bg-red-700','hover:bg-red-800',);
+            document.documentElement.style.setProperty('--pulscolor', 'rgb(185, 28, 28)');
+            
+        }else{
+            contactMeBtn = 'Contact me';
+            document.getElementById('contactMe').innerHTML = 'Contact me';
+            document.getElementById('contactMe').classList.remove('bg-red-700','hover:bg-red-800',);
+            document.documentElement.style.setProperty('--pulscolor', 'rgb(34, 197, 94)');
+            
+        }
 
 }
 

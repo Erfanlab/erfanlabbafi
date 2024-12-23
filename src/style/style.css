@@ -3,6 +3,7 @@
 @tailwind utilities;
 :root {
   --colorDynamic: red;
+  --pulscolor:rgb(34, 197, 94);
 }
 
 @font-face {
@@ -127,7 +128,7 @@ swiper-slide img {
     padding: 0;
   }
   100% {
-    border: 2px solid rgb(34, 197, 94);
+    border: 2px solid var(--pulscolor);
     padding: 6px;
   }
 }
@@ -142,13 +143,13 @@ swiper-slide img {
     flex-direction: row !important;
   }
   .section-2 .mini-section-2 {
-    transition: width 1s ease;
+    transition: width 0.7s ease;
     width: 0;
     padding: 0;
   }
   .section-2 .mini-section-2.active {
     padding: 12px !important;
-    transition: width 1s ease;
+    transition: width 0.7s ease;
     width: 400px !important;
   }
   .section-2.section-2-full {
@@ -176,6 +177,17 @@ swiper-slide img {
     transition: all 1s ease;
     width: 0 !important;
     filter: blur(50px) !important;
+  }
+}
+@media (min-width: 1024px) {
+  .section-4 {
+    transition: all 1s ease;
+    filter: blur(50px);
+  }
+  .section-4.section-4-full {
+    padding: 0;
+    transition: all 1s ease;
+    filter: blur(0) !important;
   }
 }
 
