@@ -93,26 +93,62 @@ function onclicki(a){
 }
 let contactMeBtn ='Contact me' ;
 
-function changeData(){
+function changeData(a){
+    
+    if(a == '1'){
+
         section3.classList.toggle('section-3-full');
         section2.classList.toggle('section-2-full');
         javaScripti.classList.toggle('javascript-An');
         document.documentElement.style.setProperty('--colorDynamic', 'black');
-            section4.classList.toggle('section-4-full');
+        section4.classList.toggle('section-4-full');
             document.querySelector('.mini-section-2').classList.toggle('active');
+
         if (contactMeBtn == 'Contact me'){
             contactMeBtn = 'back'
-            document.getElementById('contactMe').innerHTML = 'back';
-            document.getElementById('contactMe').classList.add('bg-red-700','hover:bg-red-800',);
+            document.getElementById('contactMe-d').innerHTML = 'back';
+            document.getElementById('contactMe-d').classList.add('bg-red-700','hover:bg-red-800',);
             document.documentElement.style.setProperty('--pulscolor', 'rgb(185, 28, 28)');
             
         }else{
             contactMeBtn = 'Contact me';
-            document.getElementById('contactMe').innerHTML = 'Contact me';
-            document.getElementById('contactMe').classList.remove('bg-red-700','hover:bg-red-800',);
+            document.getElementById('contactMe-d').innerHTML = 'Contact me';
+            document.getElementById('contactMe-d').classList.remove('bg-red-700','hover:bg-red-800',);
             document.documentElement.style.setProperty('--pulscolor', 'rgb(34, 197, 94)');
             
         }
 
+    }else{
+        
+        document.getElementById('section-4-m').classList.toggle('hidden');
+        document.getElementById('section-4-m').classList.toggle('mini-section-2-m');
+        document.getElementById('layout').classList.toggle('hidden');
+        document.getElementById('scrollpage').classList.remove('overflow-auto');
+        document.documentElement.style.setProperty('--colorDynamic', 'black');
+        javaScripti.classList.toggle('javascript-An');
+
+
+        
+        
+        document.getElementById('layout').addEventListener('click',()=>{
+            document.getElementById('section-4-m').classList.remove('mini-section-2-m');
+            javaScripti.classList.toggle('javascript-An');
+            document.getElementById('layout').classList.add('hidden');
+            document.getElementById('section-4-m').classList.add('hidden');
+            document.getElementById('scrollpage').classList.add('overflow-auto');
+            
+        })   
+        
+        
+    }   
 }
+document.getElementById('Layer').addEventListener('click',()=>
+    {
+    document.getElementById('section-4-m').classList.remove('mini-section-2-m');
+    javaScripti.classList.toggle('javascript-An');
+                   document.getElementById('layout').classList.add('hidden');
+                document.getElementById('section-4-m').classList.add('hidden');
+                document.getElementById('scrollpage').classList.add('overflow-auto');
+
+})
 

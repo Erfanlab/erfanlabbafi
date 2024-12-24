@@ -31,7 +31,7 @@
                 
         </div>
     </section>
-<div class=" h-full w-full overflow-auto lg:overflow-hidden lg:flex">
+<div id="scrollpage" class=" h-full w-full overflow-auto lg:overflow-hidden lg:flex">
 <section id="section-2" class=" bg-white w-full h-full flex flex-col justify-center items-center relative lg:min-w-[400px] section-2 lg:bg-blue-m-0  lg:text-white" >
 <div class=" absolute w-[90%] h-[70%]">
 <div class=" relative h-full w-full flex justify-center"> 
@@ -89,12 +89,13 @@
         <div class="z-10 flex justify-center items-center h-[45px]">
             <div class="rounded-md animate-pulses">
 
-                <button id="contactMe" onclick="changeData()"  class=" bg-green-500 px-8 py-2 text-center active:bg-green-800 hover:bg-green-800 rounded-md text-white font-bold  ">Contact me</button> 
+                <button id="contactMe" onclick="changeData(2)"  class="lg:hidden bg-green-500 px-8 py-2 text-center active:bg-green-800 hover:bg-green-800 rounded-md text-white font-bold  ">Contact me</button> 
+                <button id="contactMe-d" onclick="changeData(1)"  class=" hidden lg:block bg-green-500 px-8 py-2 text-center active:bg-green-800 hover:bg-green-800 rounded-md text-white font-bold  ">Contact me</button> 
             </div>
         </div>
     </div>
 
-    <div class="mini-section-2 z-30 overflow-hidden absolute bottom-3 right-3  text-nowrap">
+    <div class="hidden lg:block mini-section-2 z-30 overflow-hidden absolute bottom-3 right-3  text-nowrap">
         <div class=" bg-white p-5 rounded-xl bg-opacity-90 shadow-md text-black">
             <section id="section-4" class="w-full h-full  flex-col justify-center items-center section-4">
 
@@ -105,6 +106,38 @@
                     <a href="mailto:erfanlabbafi450@gmail.com" class="bg-green-500 px-8 py-2 text-center active:bg-green-800 hover:bg-green-800 rounded-md text-white font-bold">Send mail</a>
                 </div>
                 <div class=" border-b-2 p-2 flex flex-col justify-between">
+                    <strong>My Phone Number: 0989919295106</strong>
+                    <a href="tel:+989919295106" class="bg-green-500 px-8 py-2 text-center active:bg-green-800 hover:bg-green-800 rounded-md text-white font-bold">Call</a>
+                </div>
+        
+                <div>location : Iran,Tehran,piroziStreet </div>
+            </address>
+            
+            </section>        </div>
+    </div>
+    <div id="section-4-m" class=" hidden lg:hidden  z-30 overflow-hidden absolute text-nowrap">
+        <div class=" bg-white p-5 rounded-xl bg-opacity-90 shadow-md text-black">
+            <section  class="w-full h-full  flex-col justify-center items-center section-4">
+<div class=" flex justify-between items-center pb-3">
+
+                <h3 class=" text-2xl">Contact me...</h3>
+<svg   class="text-gray-500" height="16px" width="16px" version="1.1" id="Layer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 512 512" xml:space="preserve">
+<g>
+	<g>
+		<polygon points="512,59.076 452.922,0 256,196.922 59.076,0 0,59.076 196.922,256 0,452.922 59.076,512 256,315.076 452.922,512 
+			512,452.922 315.076,256 		"/>
+	</g>
+</g>
+</svg>
+</div>
+
+<address class=" flex flex-col gap-2 justify-center items-center">
+                <div class=" border-b-2 p-2 flex flex-col justify-between">
+                    <strong>My Email : erfanlabbafi450@gmail.com</strong>
+                    <a href="mailto:erfanlabbafi450@gmail.com" class="bg-green-500 px-8 py-2 text-center active:bg-green-800 hover:bg-green-800 rounded-md text-white font-bold">Send mail</a>
+                </div>
+                <div class=" border-b-2 p-2 flex flex-col justify-between w-full">
                     <strong>My Phone Number: 0989919295106</strong>
                     <a href="tel:+989919295106" class="bg-green-500 px-8 py-2 text-center active:bg-green-800 hover:bg-green-800 rounded-md text-white font-bold">Call</a>
                 </div>
@@ -156,6 +189,7 @@
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     
     </section>
+    <div id="layout" class=" h-full w-full bg-black bg-opacity-80 lg:hidden absolute overflow-hidden top-0 hidden z-20"></div>
 
   
 </div>

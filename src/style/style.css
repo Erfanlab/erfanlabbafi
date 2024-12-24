@@ -190,5 +190,8 @@ swiper-slide img {
     filter: blur(0) !important;
   }
 }
+body .mini-section-2-m {
+  overflow: hidden !important;
+}
 
 /*# sourceMappingURL=style.css.map */
