@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx tailwindcss -i ./src/style/style.css -o ./src/output.css --watch"
+    "dev": "npx tailwindcss -i ./src/style/style.css -o ./output.css --watch"
   },
   "keywords": [
     "ErfanLabbafi"
