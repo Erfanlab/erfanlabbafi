@@ -791,6 +791,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -961,6 +965,10 @@ video {
 
 .flex-grow {
   flex-grow: 1;
+}
+
+.flex-grow-0 {
+  flex-grow: 0;
 }
 
 .grow {
@@ -1487,6 +1495,10 @@ video {
 
 .gap-9 {
   gap: 2.25rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
