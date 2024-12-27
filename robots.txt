@@ -1,0 +1,19 @@
+# Allow all search engines to access everything
+User-agent: *
+Disallow:
+
+# Specific rules for certain user agents
+User-agent: Googlebot
+Disallow: /private/
+Disallow: /temporary/
+
+User-agent: Bingbot
+Disallow: /private/
+
+# Blocking specific file types from being crawled
+User-agent: *
+Disallow: /*.pdf$
+Disallow: /*.doc$
+
+# Sitemap location
+Sitemap: https://www.example.com/sitemap.xml
