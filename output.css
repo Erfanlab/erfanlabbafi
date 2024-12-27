@@ -2693,7 +2693,7 @@ video {
 
   font-weight: normal;
 
-  src: url("/src/YekanBakh-Regular.woff");
+  src: url("https://fonts.cdnfonts.com/s/87601/dana regular.woff");
 }
 
 @font-face {
@@ -2701,7 +2701,7 @@ video {
 
   font-weight: bold;
 
-  src: url("/src/fonts/YekanBakh-Bold.woff");
+  src: url("https://fonts.cdnfonts.com/s/87601/dana demibold.woff");
 }
 
 * {

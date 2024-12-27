@@ -9,12 +9,12 @@
 @font-face {
   font-family: yekan;
   font-weight: normal;
-  src: url("/src/YekanBakh-Regular.woff");
+  src: url("https://fonts.cdnfonts.com/s/87601/dana regular.woff");
 }
 @font-face {
   font-family: yekan;
   font-weight: bold;
-  src: url("/src/fonts/YekanBakh-Bold.woff");
+  src: url("https://fonts.cdnfonts.com/s/87601/dana demibold.woff");
 }
 * {
   font-family: yekan !important;
